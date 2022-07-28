@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="welcome">ConnectIN</string>
+    <string name="fill_up_below_details_to_login">Platform for Professional Geeks</string>
+    <string name="log_in">Log In</string>
+    <string name="UserName">Name</string>
+    <string name="customer_Id">Customer Id</string>
+    <string name="password">Your Profession</string>
+    <string name="login">Get Started</string>
+    <string name="heading">We are Glad you choose us :)</string>
+    <string name="Image_Description">Image</string>
+    <string name="top_image">top image</string>
+    <string name="email_news">Want us to send Latest news via email</string>
+</resources>

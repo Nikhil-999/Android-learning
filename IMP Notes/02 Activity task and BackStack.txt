@@ -1,0 +1,11 @@
+Launch mode for an activity is by default is standard.
+
+** taskAffinity (important)
+
+Launch modes are : 
+	standard	
+	singleTop
+	singleTask		--taskaffinity		these are not much user friendly
+	singleInstance		--taskaffinity		these are not much user friendly
+
+Intent flags are used for dynamically assign launch mode for an activity without tempering manifest file.	

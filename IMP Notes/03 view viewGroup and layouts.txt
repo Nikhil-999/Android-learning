@@ -1,0 +1,20 @@
+							android.view.View
+
+Subclasses	:--	button textview Edittext ImageView button spinner and so on. 	
+			ALSO ViewGroup is also a subclass of View
+
+
+
+
+Following are the commonly used ViewGroup subclasses used in android applications.
+
+FrameLayout
+WebView
+ListView
+GridView
+LinearLayout
+RelativeLayout
+TableLayout and many more.
+
+
+## So basically all objects created from above classes can inherit method from top most Parent class i.e " View " Class.

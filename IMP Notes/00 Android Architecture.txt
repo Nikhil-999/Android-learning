@@ -1,0 +1,36 @@
+Android arcitecture
+
+Layouts
+	-Constraint Layout (default layout like a container)
+
+use dp for setting margin , padding and length
+
+
+
+
+
+					**** Manifest File ****
+
+	--> Defines structure and metadata of our app , its component and its requirements.
+	--> This file includes nodes for each of the Activities, Services, Content Providers,
+		 and Broadcast Receiver that make the application and using Intent Filters and 
+		Permissions determines how they co-ordinate with each other and other applications.
+
+					Android Architecture
+	
+	--> Based on linux kernel.
+		as linux kernel provides : Security
+					   Memory Management
+					   Process management
+					   Network Slack
+					   Driver model
+
+	--> Libraries : Running on the top of the kernel, the Android framework was developed with various features. 
+			It consists of various C/C++ core libraries with numerous of open source tools. Some of these are:
+		* Android runtime
+		* Open GL(graphics library)
+		* WebKit
+		* Media framework
+		* Secure socket list (SSL)--> For internet security.
+
+** Android runtime provide one of the important component i.e Dalvik Virtual Machine (DVM)

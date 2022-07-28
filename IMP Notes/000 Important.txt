@@ -1,0 +1,6 @@
+TextView
+Plain text		these are common things
+
+now advanced : 		** Material Design  **
+	TextInputLayout
+	 
