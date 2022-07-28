@@ -1,0 +1,18 @@
+A service can run continuously in the background even if the application is closed or the user switches to another application. 
+
+Service is an android component that performs a long-running operation about which the user might not be aware of as it does not have UI.
+
+Types of Service :	
+			Foreground Services	-- User can interact (Stays alive even if the app is terminated.)(Like notifications)
+			
+			Background Services	-- User can't interact	(will terminate if the app is terminated)
+			
+			Bound Services		-- A component of the app is linked with the service. Bound services perform their task 
+							as long as any application component is bound to it. 
+						 	More than one component is allowed to bind themselves with a service at a time. 
+							In order to bind an application component with a service bindService() method is used. 
+
+Life cycle of Service:	Services have 2 possible paths to complete its life cycle namely Started and Bounded. 	
+
+
+Common example of Services is : Like downloading a file in background, etc.

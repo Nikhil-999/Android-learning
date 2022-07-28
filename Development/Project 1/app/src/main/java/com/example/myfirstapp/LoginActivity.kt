@@ -59,7 +59,9 @@ class LoginActivity : AppCompatActivity() {
                 check = false;
             }
             if(pincode.text.toString().length != 6 ){
-                Snackbar.make(pincode , "Invalid Pincode buddy" , Snackbar.LENGTH_LONG).show()
+                Snackbar.make(pincode , "Invalid Pincode buddy" , Snackbar.LENGTH_LONG).setAction("Retry" , View.OnClickListener(){
+                    Toast.makeText(this,"You should Enter your pincode again",Toast.LENGTH_LONG).show();
+                }).show()
                 check = false;
             }
             val demo = confirmPassword.text.toString()
