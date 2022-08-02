@@ -4,19 +4,18 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
+import android.widget.Toast
 
 class MyBackgroundService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        Thread(
-            Runnable {
-                fun run(){
+
+
                     while (true){
                         Log.e("Service", "This is the service running in the background.", )
-                        Thread.sleep(2000)
+                        Thread.sleep(1000)
                     }
-                }
-            }
-        ).start()
+
+
         return super.onStartCommand(intent, flags, startId)
     }
 

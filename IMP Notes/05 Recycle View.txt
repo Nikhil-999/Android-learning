@@ -1,0 +1,20 @@
+
+TO use recyclerView, must include dependency in the grade file.
+
+
+	RecycleView is a main class 
+
+ViewHolder :- Each individual element in the list is defined by a view holder object.
+Adapter	:- The RecyclerView requests those views, and binds the views to their data, by calling methods in the adapter. 
+		You define the adapter by extending RecyclerView.Adapter.
+
+
+
+
+
+			      ------ ViewHolder ---- 	
+			      |			   |
+layoutManager	->	RecycleView	<-	Adapter
+
+
+Also, layoutInflater is used to bind the XML to a single view and then we pass it to MyViewHolder Class for further process.

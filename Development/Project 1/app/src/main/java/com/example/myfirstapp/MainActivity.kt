@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val password = findViewById<EditText>(R.id.TextPassword)
 
         if (name.text.toString() == "" || password.text.toString() == "") {
-            Toast.makeText(this, "Invalid User Input", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Invalid Input", Toast.LENGTH_SHORT).show()
         }
         else {
             val intent = Intent(this, LoginActivity::class.java)

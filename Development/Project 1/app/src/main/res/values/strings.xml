@@ -11,4 +11,15 @@
     <string name="Image_Description">Image</string>
     <string name="top_image">top image</string>
     <string name="email_news">Want us to send Latest news via email</string>
+    <string name="next_activity">See ViewPager</string>
+    <string name="view_pager_text">View Pager Text</string>
+
+    <string-array name="courses">
+        <item>ONE</item>
+        <item>TWO</item>
+        <item>THREE</item>
+        <item>FOUR</item>
+        <item>FIVE</item>
+        <item>SIX</item>
+    </string-array>
 </resources>

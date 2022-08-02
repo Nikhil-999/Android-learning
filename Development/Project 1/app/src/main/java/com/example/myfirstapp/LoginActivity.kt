@@ -1,9 +1,9 @@
 package com.example.myfirstapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -77,6 +77,9 @@ class LoginActivity : AppCompatActivity() {
 
         if(check){
             Toast.makeText(this, "Succesfully SIGNED UP", Toast.LENGTH_SHORT).show()
+            val nextIntent = Intent(this , MyRecycleView::class.java)
+            startActivity(nextIntent)
+
         }
 
     }
