@@ -15,27 +15,30 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnFrameOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
             android:text="@string/frame_1"
             android:textSize="20sp"
-            app:backgroundTint="#4CAF50" />
+            app:backgroundTint="#4CAF50"
+            android:onClick="firstButtonClicked"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnFrameTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
             android:text="@string/frame2"
             android:textSize="20sp"
-            app:backgroundTint="#4CAF50" />
+            app:backgroundTint="#4CAF50"
+            android:onClick="secondButtonCLicked"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"></LinearLayout>

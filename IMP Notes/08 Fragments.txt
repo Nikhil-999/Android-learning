@@ -1,6 +1,8 @@
-Fragments can be used to make custom : action bar , Dialog boxes , Recycle View and tab modes
+Fragments can be used to make custom : action bar , Dialog boxes , RecycleView, ViewPager, tab modes, etc
 
 reason being Fragment gives a body structure inside which all above Views can be implemented.
+
+
 
 Two aspects of Fragments:	
 	Fragment manager and Fragment Transaction

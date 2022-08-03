@@ -12,9 +12,17 @@
         android:layout_height="wrap_content"
         android:background="#FFEB3B"
         android:gravity="center_horizontal"
-        android:textColor="@color/black"
         android:text="@string/Inside_first_frame"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="200dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/demoViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="50dp"/>
 
 </FrameLayout>
