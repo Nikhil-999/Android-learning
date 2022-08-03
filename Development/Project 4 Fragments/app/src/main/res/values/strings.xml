@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FragmentApp</string>
+    <string name="frame_1">Frame 1</string>
+    <string name="frame2">Frame2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Inside_first_frame">Inside First Frame</string>
+    <string name="inside_second_frame">Inside Second Frame</string>
 </resources>
