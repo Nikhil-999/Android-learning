@@ -1,0 +1,16 @@
+Fragments can be used to make custom : action bar , Dialog boxes , Recycle View and tab modes
+
+reason being Fragment gives a body structure inside which all above Views can be implemented.
+
+Two aspects of Fragments:	
+	Fragment manager and Fragment Transaction
+
+# Fragment Manager:		## Fragments usually gets replaced hence to keep track (Reference) of each fragment we have fragment manager.
+	-> Every Activity has its own fragment manager.
+	-> It maintains the references to all the fragments inside the activity.
+	-> We can use findFragmentById() method to get a reference to a particular fragment inside the activity.
+
+# Fragment Transaction: 
+	-> The act of adding, removing, replacing fragment into the activity are considered as Transaction.
+	-> Reference variable to transaction can be created like
+		-: FragmentTransaction demo = getSupportFragmentManager().beginTransaction(); 
