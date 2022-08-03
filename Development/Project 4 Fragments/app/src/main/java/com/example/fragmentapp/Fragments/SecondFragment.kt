@@ -1,5 +1,6 @@
 package com.example.fragmentapp.Fragments
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,7 +18,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         super.onViewCreated(view, savedInstanceState)
 
         val myRecycleView = view.findViewById<RecyclerView>(R.id.myrec)
-        myRecycleView.layoutManager = LinearLayoutManager(this)
+        myRecycleView.layoutManager = LinearLayoutManager(activity)         //Important we have to pass activity (getActivity() method in java)
         val myArrayList = myfun()
         val customAdapter = AdapterForRecycleView(myArrayList)
         myRecycleView.adapter = customAdapter
