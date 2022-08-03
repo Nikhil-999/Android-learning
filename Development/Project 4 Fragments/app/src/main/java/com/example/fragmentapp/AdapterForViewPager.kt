@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class adapterForViewPager(private val mylist : ArrayList<String>) : RecyclerView.Adapter<ViewPagerViewHolder>() {
+class AdapterForViewPager(private val mylist : ArrayList<String>) : RecyclerView.Adapter<ViewPagerViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {
         val demoView = LayoutInflater.from(parent.context).inflate(R.layout.itemforviewpager , parent , false)
         return ViewPagerViewHolder(demoView)

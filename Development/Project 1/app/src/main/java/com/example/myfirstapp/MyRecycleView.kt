@@ -14,13 +14,14 @@ class MyRecycleView : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_recycle_view)
 
+        //Below code for Spinner AKA dropdown
         val myDropDown : Spinner = findViewById(R.id.mySpinner)
         val adapter = ArrayAdapter.createFromResource(this , R.array.courses , android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         myDropDown.adapter = adapter
 
 
-
+        //Below code for Recycle View
         val myRecycleView = findViewById<RecyclerView>(R.id.myrec)
         myRecycleView.layoutManager = LinearLayoutManager(this)
         val myArrayList = myfun()

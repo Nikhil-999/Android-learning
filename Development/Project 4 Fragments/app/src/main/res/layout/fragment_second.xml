@@ -6,7 +6,7 @@
     android:background="#A476F6"
     tools:context=".Fragments.SecondFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,5 +17,12 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="40sp"
         android:layout_marginTop="200dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myrec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="300dp"/>
 
 </FrameLayout>

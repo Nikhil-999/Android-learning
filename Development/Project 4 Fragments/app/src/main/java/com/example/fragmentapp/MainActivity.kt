@@ -15,19 +15,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        val myView_pager = findViewById<ViewPager2>(R.id.demoViewPager)
-        val myStrings = myfun()
-        val customAdapter = adapterForViewPager(myStrings)
-        myView_pager.adapter = customAdapter
-
     }
 
     fun firstButtonClicked(view: View) {
+
         val demo = FirstFragment()
         val mytransaction = supportFragmentManager.beginTransaction()
         mytransaction.replace(R.id.fragmentContainer , demo)
         mytransaction.commit()
+
+
     }
     fun secondButtonCLicked(view: View) {
         val demo = SecondFragment()
@@ -36,11 +33,4 @@ class MainActivity : AppCompatActivity() {
         mytransaction.commit()
     }
 
-    private fun myfun() : ArrayList<String>{
-        val demoList = ArrayList<String>()
-        for(i in 1 until 6){
-            demoList.add("My Item number $i")
-        }
-        return demoList
-    }
 }
