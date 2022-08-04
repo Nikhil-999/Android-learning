@@ -22,8 +22,7 @@
             android:layout_weight="1"
             android:text="@string/frame_1"
             android:textSize="20sp"
-            app:backgroundTint="#4CAF50"
-            android:onClick="firstButtonClicked"/>
+            app:backgroundTint="#4CAF50"/>
 
         <Button
             android:id="@+id/btnFrameTwo"
@@ -33,8 +32,7 @@
             android:layout_weight="1"
             android:text="@string/frame2"
             android:textSize="20sp"
-            app:backgroundTint="#4CAF50"
-            android:onClick="secondButtonCLicked"/>
+            app:backgroundTint="#4CAF50"/>
     </LinearLayout>
 
     <LinearLayout
