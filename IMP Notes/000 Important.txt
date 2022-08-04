@@ -3,4 +3,8 @@ Plain text		these are common things
 
 now advanced : 		** Material Design  **
 	TextInputLayout
-	 
+
+
+Context --> The current state of the application/Object is called context.	 
+	    It lets newly-created objects understand what has been going on. 
+	Typically, you call it to get information regarding another part of your program (activity and package/application)
