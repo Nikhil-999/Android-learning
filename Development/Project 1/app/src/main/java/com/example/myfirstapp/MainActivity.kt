@@ -21,17 +21,15 @@ class MainActivity : AppCompatActivity() {
 
         if (name.text.toString() == "" || password.text.toString() == "") {
             Toast.makeText(this, "Invalid Input", Toast.LENGTH_SHORT).show()
-        }
-        else {
+        } else {
             val intent = Intent(this, LoginActivity::class.java)
             intent.putExtra("userName_key", name.text.toString())
-            intent.putExtra("myMessage" , password.text.toString())
+            intent.putExtra("myMessage", password.text.toString())
             startActivity(intent)
             Toast.makeText(this, "Hey Geek", Toast.LENGTH_SHORT).show()
         }
 
     }
-
 
 
 }

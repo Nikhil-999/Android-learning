@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 class MyAdapter(private val items: ArrayList<String>) : RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         // Below layoutInflater is used to bind the XML to a single view.
-        val demo = LayoutInflater.from(parent.context).inflate(R.layout.item_for_recycleview , parent , false)
+        val demo = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_for_recycleview, parent, false)
         return MyViewHolder(demo)
     }
 
@@ -25,6 +26,6 @@ class MyAdapter(private val items: ArrayList<String>) : RecyclerView.Adapter<MyV
     }
 }
 
-class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val myItem: TextView = itemView.findViewById<TextView>(R.id.myTitle)
 }

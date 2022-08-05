@@ -15,8 +15,12 @@ class MyRecycleView : AppCompatActivity() {
         setContentView(R.layout.activity_my_recycle_view)
 
         //Below code for Spinner AKA dropdown
-        val myDropDown : Spinner = findViewById(R.id.mySpinner)
-        val adapter = ArrayAdapter.createFromResource(this , R.array.courses , android.R.layout.simple_spinner_item)
+        val myDropDown: Spinner = findViewById(R.id.mySpinner)
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.courses,
+            android.R.layout.simple_spinner_item
+        )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         myDropDown.adapter = adapter
 
@@ -30,16 +34,16 @@ class MyRecycleView : AppCompatActivity() {
 
     }
 
-    private fun myfun() : ArrayList<String>{
+    private fun myfun(): ArrayList<String> {
         val demoList = ArrayList<String>()
-        for(i in 1 until 100){
+        for (i in 1 until 100) {
             demoList.add("My Item number $i")
         }
         return demoList
     }
 
     fun NextActivityCalled(view: View) {
-        val myIntent = Intent(this , MyViewPager::class.java)
+        val myIntent = Intent(this, MyViewPager::class.java)
         startActivity(myIntent)
     }
 
