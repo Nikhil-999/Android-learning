@@ -1,0 +1,3 @@
+
+Runnable object basically encapsulate the code which we want to be executed by the Thread.
+that is why after creating a runnable we need to pass it to thread instance and then call the start() method to execute the thread.
