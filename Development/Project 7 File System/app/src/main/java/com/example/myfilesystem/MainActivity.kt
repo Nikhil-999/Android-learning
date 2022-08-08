@@ -1,14 +1,14 @@
 package com.example.myfilesystem
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import java.io.*
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
         textOutput = findViewById(R.id.textOutput)
 
         btnSave.setOnClickListener {
-            saveMyFile()
+//            saveMyFile()
+            writeFileOnInternalStorage(applicationContext , "kotlinFILE" , userInput.text.toString())
         }
 
         btnLoad.setOnClickListener {
@@ -49,8 +50,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadMyFile() {
+        val demo: String
         try {
-            val myFile: FileInputStream = openFileInput("myFirstFile")
+            val myFile: FileInputStream = openFileInput("kotlinFILE")
             val reader: InputStreamReader = InputStreamReader(myFile)
             val myBuffer: BufferedReader = BufferedReader(reader)
             val myStringBuilder: StringBuilder = StringBuilder()
@@ -59,10 +61,32 @@ class MainActivity : AppCompatActivity() {
 
                 myStringBuilder.append(text)
             }
+//            demo = myFile.fd.toString()
             textOutput.text = myStringBuilder.toString()
+//            Log.e("Successfully filed", "loadMyFile: $demo ")
         }catch (E: Exception){
+
             Log.e("File Opening ERROR", "loadMyFile: there is some error " )
             Snackbar.make(btnLoad , "File Doesn't Exist" , Snackbar.LENGTH_SHORT).show()
         }
     }
+
+
+    fun writeFileOnInternalStorage(mcoContext: Context, sFileName: String?, sBody: String?) {
+        val dir = File(mcoContext.getFilesDir(), "mydir")
+        if (!dir.exists()) {
+            dir.mkdir()
+
+        }
+        try {
+            val gpxfile = File(dir, sFileName)
+            val writer = FileWriter(gpxfile)
+            writer.append(sBody)
+            writer.flush()
+            writer.close()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
 }

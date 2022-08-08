@@ -1,0 +1,24 @@
+
+Gradle is the build toolkit for ultimately build your app.
+
+Gradle is responsible for converting your java/kotlin files AND .xml *(basically all source files)* into .class file 
+and then those .class files are converted into .dex file (Also known as Dalvik Bytecode) 
+and groups them all into one compressed file --> APK
+
+This build system uses some conventions: an example of one is to specify the directory containing the source files (in Eclipse it is \src folder)
+or resources files (in Eclipse it is \res folder).
+Now, in order to automate all these tasks, there has to be a script, we can write your own build system using 
+shell scripting in Linux or batch files syntax in Windows. 
+
+
+Grade is a JVM-based build system. That means you can write your own script in Java, which Android Studio makes use of.
+
+
+
+	Debug and release APKs
+
+Debug APK is the one which can be found inside app/build/...app.APK
+and generally used to install app in mobiles/tablet/etc.
+
+but u have to create "release APK" using "Build" in the navigation bar, 
+which later can be used to host your app in app store by providing Release APK globally.
