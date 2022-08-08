@@ -1,3 +1,19 @@
 
 Runnable object basically encapsulate the code which we want to be executed by the Thread.
 that is why after creating a runnable we need to pass it to thread instance and then call the start() method to execute the thread.
+
+
+how to access a view of main thread inside another thread ?
+	below are different approaches:
+		-Using MainClass Handler
+		-Using InnerClass Handler
+		-Using myButton.post Method
+		-Using runOnUiThread method
+
+ # If we want to stop a thread before it finishes, we can use boolean variable(as a check) to manipulate runTime of a thread.
+
+
+Also the MessageQueue which contains lot of works is looped by a looper Which pull out work from queue into the thread and handler can add work into the 
+queue, at any position : infront , in middle or in the back.
+
+Here, Unit of Work is : Runnable , Intent or messages.	(which of all these are stored into the queue by the handler.)
