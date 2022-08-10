@@ -1,0 +1,1 @@
+Context variable is basically like a container to store a reference to a activity.
