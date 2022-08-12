@@ -1,0 +1,116 @@
+
+### StandaloneCoroutine => launch{}
+### DeferredCoroutine => async{}
+### BlockingCoroutine => runBlocking{}
+
+
+							*********
+						---> 	Chapter 1 	<---
+							*********
+
+
+Unlike Threads, for coroutines the application by default does not wait for it to finish its execution.
+
+Coroutines can start on any thread but it doesn't necessary mean it will end on the same thread.
+
+	GlobalScope.launch{ //some code }	//this is one way of creating coroutines 
+	runBlocking{ //some code }		//this is special coroutine which target the thread in which it is declared.
+	
+* GlobalScope.launch() is non blocking in nature whereas runBlocking() blocks the thread in which it operates.
+
+
+
+						***********************
+					--->	Chapter 2 starts below.		<---
+						***********************
+
+Coroutine Builders : launch , async , runBlocking	//there are more different methods to create coroutines.
+
+	launch{} 		//it has local scope like in that particular activity. 			//By default, use launch{}.
+		eg : Some data computation (which can be done in background in that particular activity only)
+		eg : Login operation.
+
+				VS
+ 
+	GlobalScope.launch{}	//it has global scope (means full lifecycle of the application/app). 	//Discouraged, use only when needed.
+				// also globalScope by default is a Companion object".
+		eg : File download.
+		eg : Play music.
+
+function delay(1000) is the suspending function i.e it can only be used inside a coroutines.
+
+launch{} function returns a Job Object and we can store it in the val and use it to manipulate the lifecycle of the coroutine.
+	eg: val job: Job = launch{}
+					now, job.cancel() , job.join() methods can be used.
+
+async{} 
+	coroutine builder returns Deferred<Int/String/float/anything> instance which is a subclass of Job Interface.
+	and also async returns a Int,String,float or anything which can be retrieved using myDeferred.await() which works exactly like .join().
+
+.join() , .await() , .cancel() are all suspending function which can only be used inside a coroutine.
+
+runBlocking{} is used to write testcases with the suspending function.
+
+IMPORTANT : launch{} and async{} never blocks the thread in which they are running but runBLocking{} will block the thread in which it is running.
+
+
+							**********************
+						--->	Chapter 3 starts below	  <---
+							**********************
+
+Coroutine cancel method is called when we need to cancel it.
+Those Coroutine which are cooperative in nature will only get cancelled , NON-Cooperative Coroutine will never get cancelled.
+
+val job: Job = launch{ //some code }
+	
+job.cancel()		//if it fails to cancel then the below join function will run succesfully and wait for the coroutine to finish.
+job.join()		//wait for the coroutine to finish.
+	OR USE BELOW FUNCTION
+job.cancelAndJoin()
+
+Now, What is Cooperative Coroutine?
+	A coroutine is considered Cooperative when that coroutine has a suspend method (like .delay() , .join() , .await() etc) which belongs to kotlinx.coroutines package.
+
+Explicitly check for the cancellation status within the coroutine :- CoroutineScope.isActive boolean flag 
+hence, use isActive in the if statement to manipulate the coroutine.
+
+## Handle Exceptions: 
+	-Handle CancellationException using try, catch and finally blocks
+	-Use withContext(NonCancellable) to execute suspending functions within finally.
+
+## Timeouts:
+	-withTimeout: Handled TimeoutCancellationException
+	-withTimeoutOrNull
+
+
+							*********************
+						---> 	Chapter 4 starts here	<--- 
+							*********************
+
+Topics :- Composing Suspending Functions
+		Sequential, Concurrent, and Lazy execution.
+
+--> Code execution within coroutine is by default sequential.
+	OR Functions execution are sequential by default.
+--> We can achieve parallel execution of funtions/code inside the coroutine by declaring more coroutines for that specific code/function.
+--> Lazily start a coroutine: async		//this lazy keywords manipulate the running of the coroutine such that if the outcome of the coroutine is not used in the program
+						// then the coroutine will never execute within the program.
+
+
+							*********************
+						--->	Chapter 5 starts here	 <---
+
+Topics :- CoroutineScope, CoroutineContext, and Dispatchers
+
+--> Every coroutine has its own CoroutineScope instance attached to it.	hence, whenever u say 'this' inside a coroutine it will be referencing to the CoroutineScope instance.
+	Even the nested coroutines have their own very coroutineScope instance (aka object reference), hence every reference is UNIQUE.
+
+--> CoroutineContext :-> Two components- Job and Dispatcher
+	
+--> Dispatcher will decide onWhich thread the coroutine will execute.
+	-- without Parameter if we create a coroutine then it will inherit the thread of the parent (or we can say dispatcher of parent). Also Known as Confined Dispatcher, even if this coroutine has delay it will still stick to the assigned thread.
+	-- with Parameter : Dispatchers.Default --> this will make the coroutine behave similar to GlobalScope.launch{}.
+	-- with Parameter : Dispatchers.Unconfined --> Inherits CoroutineContext from the immediate parent coroutine.
+						   --> After the delay() or suspending function execution, it continues to run in some other thread.
+	-- one more way to set coroutine to run on the specific thread is by passing CoroutineContext as parameter to a coroutine when it is initialized.
+		eg: launch(coroutineContext){}.
