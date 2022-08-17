@@ -2,3 +2,7 @@
 This Component is an observable data holder class i.e, the contained value can be observed.
 
 It is also a lifecycle aware. means it knows the lifecycle of activity or fragment or services.
+It helps to avoids memory leaks.
+It makes the task of data synchronization easier.
+
+It keep the track of the data, and if the data is changed OR updates then the observer gets alerted and execute its functionality.
