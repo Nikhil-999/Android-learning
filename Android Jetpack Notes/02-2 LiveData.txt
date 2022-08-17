@@ -1,0 +1,4 @@
+
+This Component is an observable data holder class i.e, the contained value can be observed.
+
+It is also a lifecycle aware. means it knows the lifecycle of activity or fragment or services.
