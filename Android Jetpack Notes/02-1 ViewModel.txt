@@ -11,3 +11,8 @@ Helps in data management during configuration changes
 Reduce UI bugs and crashes
 Best practice for software design
 
+#IMPORTANT : - Model classes are independent of the view, they are only used to store the data.
+	     - Don't include view's instances, hence we can prevent memory leak.
+		
+
+	val obj = ViewModelProvider(contextOfPresentClass).get(custom made viewModel)
