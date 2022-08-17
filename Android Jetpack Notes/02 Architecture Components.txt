@@ -1,0 +1,22 @@
+WHY?? 
+To deal with changes/updates in data and application lifecycle, Google introduced Architecture components.
+
+Architecture Components could be classified as follows: 
+
+Room
+WorkManager
+Lifecycle
+ViewModel
+LiveData
+Navigation
+Paging
+Data Binding
+
+The View layer is represented by the Activity/Fragment. They only deal with user interaction and observes as well as exhibits the LiveData element which is taken from the ViewModel.
+
+ViewModel keeps a check on the Lifecycle of View and is responsible for maintaining data consistency during configuration changes in the device or other android lifecycle events.
+
+The Repository is a class with no proper implementation and is responsible for gathering data from all the sources. It handles all the data and transforms them into observable LiveData and makes it accessible to ViewModel.
+
+Room is an SQLite mapping library that overcomes the challenges of SQLite database like writing boilerplate codes, and query checking at compile time. It has the ability to return queries directly with observable LiveData.
+

@@ -1,0 +1,23 @@
+Jetpack consist of a wide collection of libraries that are built in a way to work together and make robust mobile applications.
+
+1) AppCompat liberary contains following liberaries:
+
+*App Bar: It is the action bar which contain Name of the application or Current activity name.
+
+*Navigation Drawer: It is the side navigation bar (left pane menu). Also provides assists in managing the active state of each menu element with XML resources.
+
+##### Using ContextCompat (a component of Appcompat), the number of lines of code reduce drastically as well as the dependency of drawables on the OS version also removed.
+
+*Permissions
+*Resources ##### Using ContextCompat (a component of Appcompat), the number of lines of code reduce drastically as well as the dependency of drawables on the OS version also removed.
+*Dialog Box
+*Share Actions	- Sharing of files from one app to another.
+
+
+2)  Android KTX
+	- It is a collection of kotlin extensions using which devs can decrease the lines of code.
+	- Many of the jetpack libraries are linked with various Android KTX modules. 
+	
+3) Multi-dex
+	-While making any real-life mobile application, the count of methods in project libraries can easily cross the number 65,536.
+	  In this situation, developers take the help of Multidex library which performs the system split of the .dex file of the application into multiple .dex files.

@@ -1,0 +1,13 @@
+
+ViewModel is a class that is responsible for preparing and managing the data for an Activity or a Fragment.
+
+Its main function is to maintain the integrity and allows data to service during configuration changes like screen rotations. 
+
+Instead of storing the UI data into the activity we should use viewModel to store, and will survive the configuration changes (like rotate screen).
+
+Advantages of ViewModel Component:
+
+Helps in data management during configuration changes
+Reduce UI bugs and crashes
+Best practice for software design
+

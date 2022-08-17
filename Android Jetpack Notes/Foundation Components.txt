@@ -1,9 +1,0 @@
-Jetpack consist of a wide collection of libraries that are built in a way to work together and make robust mobile applications.
-
-AppCompat liberary contains following liberaries:
-
-*App Bar: It is the action bar which contain Name of the application or Current activity name.
-
-*Navigation Drawer: It is the side navigation bar (left pane menu). Also provides assists in managing the active state of each menu element with XML resources.
-
-##### ContextCompat (a component of Appcompat)
