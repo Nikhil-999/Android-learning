@@ -1,0 +1,7 @@
+
+It is the library that allows us to bind UI components from ur Layouts to Data sources in the app using
+a declarative format rather than programmatically.
+
+Views are bind to data source is called dataBinding. (used in MVVM pattern)
+
+3:30
