@@ -1,0 +1,6 @@
+The Paging library helps you load and display pages of data from a larger dataset from local storage or over network.
+
+Paging has 3 main components:
+	-Paging Source
+	-Pager
+	-Paging Adapter

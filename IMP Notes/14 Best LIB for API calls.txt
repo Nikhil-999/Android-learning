@@ -1,0 +1,17 @@
+The main difference between our three mainly used techniques for implementing API’s is our android app. 
+As we can see the difference in performance that for one discussion means for one network request and response they will take how much time.
+
+1. AsyncTask: 
+one(1) discussion: 941 ms
+Seven(7) discussions: 4539 ms
+Twenty Five(25) discussions: 13957 ms
+
+2. Volley: 
+one(1) discussion: 560 ms
+Seven(7) discussions: 2202 ms
+Twenty Five(25) discussions: 4275 ms
+
+3. Retrofit: 
+one(1) discussion: 312 ms
+Seven(7) discussions: 889 ms
+Twenty Five(25) discussions: 1059 ms
