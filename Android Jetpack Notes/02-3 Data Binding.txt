@@ -4,4 +4,6 @@ a declarative format rather than programmatically.
 
 Views are bind to data source is called dataBinding. (used in MVVM pattern)
 
-3:30
+binding can be done easily but the views can be accessed directly by their ID
+		OR
+u can access the view by declaring a variable and Data class (basically a data source).
