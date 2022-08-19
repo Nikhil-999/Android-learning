@@ -1,0 +1,8 @@
+
+--> MediaPLayer class is used to play media file like: Audio and video etc.
+
+## State Diagram of the MediaPLayer Class
+ -> The Playing of the audio or Video file using MediaPlayer is done using a state machine.
+	
+	Some methods related to state diagram
+		-> start() , reset() , stop() , pause() , release() , seekTo() , prepare()

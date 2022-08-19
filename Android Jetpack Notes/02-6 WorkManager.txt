@@ -1,0 +1,4 @@
+
+Work manager is responsible for background process even if the app is destroyed or the phone is restarted.
+
+Example : Sync data from server.

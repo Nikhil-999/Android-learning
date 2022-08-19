@@ -1,0 +1,5 @@
+
+A URI is a uniform resource identifier while a URL is a uniform resource locator.
+
+The download manager will conduct the download in the background, taking care of HTTP interactions
+and retrying downloads after failures or across connectivity changes and system reboots.
