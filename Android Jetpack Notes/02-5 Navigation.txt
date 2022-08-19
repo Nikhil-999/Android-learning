@@ -1,0 +1,2 @@
+
+Same concept as of Multiple Fragment in one activity but this is easier version to manipulate fragments
