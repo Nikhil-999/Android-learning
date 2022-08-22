@@ -8,3 +8,6 @@ now advanced : 		** Material Design  **
 Context --> The current state of the application/Object is called context.	 
 	    It lets newly-created objects understand what has been going on. 
 	Typically, you call it to get information regarding another part of your program (activity and package/application)
+
+
+Companion object --> it works like Static modifier such that methods or variable defined inside companion object can be accessed directly by class name.
