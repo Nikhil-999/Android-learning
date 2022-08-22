@@ -1,0 +1,9 @@
+
+MVVM - Model, View , ViewModel.
+
+Model - Holds the data of the application. It can't directly communicate to the View.
+View - well known concept and it observes the ViewModel.
+ViewModel - It acts as a link between Model and View hence act as a mediator. It's responsible for : Transforming the data.
+												     Provides Data Streams to the view.
+												     It uses Hooks OR callbacks to update the view.
+												     It'll ask for the data from the model.
