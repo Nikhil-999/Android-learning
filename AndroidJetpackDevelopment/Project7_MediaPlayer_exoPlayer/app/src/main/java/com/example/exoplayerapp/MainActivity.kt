@@ -3,17 +3,18 @@ package com.example.exoplayerapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ProgressBar
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.ui.PlayerView
-import com.google.android.exoplayer2.ui.StyledPlayerView
 
-class MainActivity : AppCompatActivity() , Player.Listener {
+class MainActivity : AppCompatActivity(), Player.Listener {
     private lateinit var myPlayer: ExoPlayer
     private lateinit var myPlayerView: PlayerView
     private lateinit var myProgressbar: ProgressBar
+    private lateinit var myBtnNotifyMe: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,16 +27,15 @@ class MainActivity : AppCompatActivity() , Player.Listener {
         setupPlayer()
         addmp3files()
 
-
     }
 
-    private fun setupPlayer(){
+    private fun setupPlayer() {
         myPlayer = ExoPlayer.Builder(this).build()
         myPlayerView.player = myPlayer
         myPlayer.addListener(this)
     }
 
-    private fun addmp3files(){
+    private fun addmp3files() {
         val mediaItem = MediaItem.fromUri(getString(R.string.myOwn_mp3))
         myPlayer.setMediaItem(mediaItem)
         myPlayer.prepare()
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() , Player.Listener {
     override fun onPlaybackStateChanged(playbackState: Int) {
         super.onPlaybackStateChanged(playbackState)
 
-        when(playbackState){
+        when (playbackState) {
             Player.STATE_BUFFERING -> {
                 myProgressbar.visibility = View.VISIBLE
             }
