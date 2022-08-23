@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Preferences_DataStore</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="HintName">Name</string>
+    <string name="HintAge">Age</string>
+    <string name="female_male">Female/Male</string>
+    <string name="save_user">Save user</string>
+    <string name="load_user">Load User</string>
 </resources>
