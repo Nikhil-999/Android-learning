@@ -11,3 +11,9 @@ Context --> The current state of the application/Object is called context.
 
 
 Companion object --> it works like Static modifier such that methods or variable defined inside companion object can be accessed directly by class name.
+
+
+**To do some task asynchronously we use Coroutines hence whenever we declare our own functions we use "suspend" keyword so that
+	it can be called inside a coroutine.
+
+**The "lazy" keyword is used when we need some line of code to be executed only and only when that particular variable is called.

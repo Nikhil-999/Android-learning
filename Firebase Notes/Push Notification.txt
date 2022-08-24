@@ -1,0 +1,9 @@
+
+Directly from Firebase and Android studio, we can push noti.
+
+and 
+
+Can do this with an APP 
+	here:->     https://www.youtube.com/watch?v=HoFWPPv1ih8
+
+ 

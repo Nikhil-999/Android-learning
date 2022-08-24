@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirebaseAPP</string>
+    <string name="save_data">Save Data</string>
+    <string name="enter_data">Enter data</string>
+    <string name="enter_task">Enter Task</string>
+    <string name="task_no">Task No.</string>
+</resources>
