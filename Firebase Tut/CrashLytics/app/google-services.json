@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "50722448789",
+    "project_id": "crashlyticapp-e482b",
+    "storage_bucket": "crashlyticapp-e482b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50722448789:android:8732feea2e50e013a0829c",
+        "android_client_info": {
+          "package_name": "com.example.crashlyticapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50722448789-65snq8lj1466hr03ads28m5hijuhggut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUdNMXtFRqUS6ZvrcujAdBP7C72Ia7UkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50722448789-65snq8lj1466hr03ads28m5hijuhggut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
