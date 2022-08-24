@@ -1,0 +1,5 @@
+
+Firebase is NOSQL database.
+Firebase is online database.
+Firebase is also used for authentication, realtime database and many more.
+	
