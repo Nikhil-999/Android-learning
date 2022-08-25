@@ -23,5 +23,5 @@ class AdapterForViewPager(private val mylist : ArrayList<String>) : RecyclerView
 }
 
 class ViewPagerViewHolder(itemview : View) : RecyclerView.ViewHolder(itemview){
-    val item: TextView = itemview.findViewById<TextView>(R.id.textforviewpager)
+    val item: TextView = itemview.findViewById(R.id.textforviewpager)
 }
