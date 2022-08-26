@@ -1,0 +1,9 @@
+It only take 2 child 
+and 1st child is visible to user
+and 
+2nd child is hidden on left or right of the main screen depending on the layout_gravity set to "start" or "end".
+
+
+2nd child which is NavigationView is the one which become side navigation bar.
+	in which we have 2 things : 1) Header
+				    2) Menu items

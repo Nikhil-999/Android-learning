@@ -3,39 +3,39 @@
 
     <group>
         <item android:id="@+id/item1"
-            android:icon=""
+            android:icon="@drawable/item1"
             android:title="Item1"/>
 
         <item android:id="@+id/item2"
-            android:icon=""
+            android:icon="@drawable/item2"
             android:title="Item2"/>
 
         <item android:id="@+id/item3"
-            android:icon=""
+            android:icon="@drawable/item3"
             android:title="Item3"/>
     </group>
 
     <group>
         <item android:id="@+id/number1"
-            android:icon=""
+            android:icon="@drawable/number1"
             android:title="Number1"/>
 
         <item android:id="@+id/number2"
-            android:icon=""
+            android:icon="@drawable/number2"
             android:title="Number2"/>
 
         <item android:id="@+id/number3"
-            android:icon=""
+            android:icon="@drawable/number3"
             android:title="Number3"/>
     </group>
 
 
     <item android:id="@+id/extras1"
-        android:icon=""
+        android:icon="@drawable/extras1"
         android:title="Extras1"/>
 
     <item android:id="@+id/extras2"
-        android:icon=""
+        android:icon="@drawable/extras2"
         android:title="Extras2"/>
 
 </menu>

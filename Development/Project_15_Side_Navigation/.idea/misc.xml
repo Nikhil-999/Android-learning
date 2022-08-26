@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/drawable/ic_baseline_rss_feed_24.xml" value="0.247" />
+        <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.247" />
+        <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.247" />
+        <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/drawable/number2.xml" value="0.247" />
+        <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/layout/drawer_header.xml" value="0.253125" />
         <entry key="..\:/ANDROID/Development/Project_15_Side_Navigation/app/src/main/res/menu/navbar.xml" value="0.25416666666666665" />
       </map>
     </option>

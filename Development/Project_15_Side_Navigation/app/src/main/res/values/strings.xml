@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SideNavigation</string>
+    <string name="welcome">Welcome :)</string>
+    <string name="feel_free_to_navigate">Feel free to Navigate</string>
 </resources>
