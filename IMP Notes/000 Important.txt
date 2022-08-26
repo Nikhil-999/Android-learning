@@ -20,3 +20,6 @@ Companion object --> it works like Static modifier such that methods or variable
 
 
 **If want to customize fragment, declare a constraint layout inside it and set height and width to match_parent.
+
+
+**Remember to use override fun onPause() , fun onResume(), ETC to manipulate the outcome of the app.
