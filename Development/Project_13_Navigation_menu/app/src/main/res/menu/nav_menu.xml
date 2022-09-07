@@ -13,5 +13,9 @@
         android:id="@+id/favorite"
         android:icon="@drawable/ic_baseline_favorite_24"
         android:title="Favorite"/>
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Account"/>
 
 </menu>
