@@ -1,0 +1,6 @@
+
+Components:
+	- Paging Source	- AKA DATA SOURCE
+	- Pager	- Configuration of the page like no. of records in a Page. 
+	- Paging Adapter - Adapter to set data into any view (eg: RecyclerView , etc)
+
