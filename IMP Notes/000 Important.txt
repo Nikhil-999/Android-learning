@@ -17,9 +17,3 @@ Companion object --> it works like Static modifier such that methods or variable
 	it can be called inside a coroutine.
 
 **The "lazy" keyword is used when we need some line of code to be executed only and only when that particular variable is called.
-
-
-**If want to customize fragment, declare a constraint layout inside it and set height and width to match_parent.
-
-
-**Remember to use override fun onPause() , fun onResume(), ETC to manipulate the outcome of the app.

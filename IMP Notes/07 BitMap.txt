@@ -1,3 +1,0 @@
-BitMap variable can be used to store image in which single bit is corresponds to single pixel.
-
-hence, using BitMap methods we can modify images as per need.

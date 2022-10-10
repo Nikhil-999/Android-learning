@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <Button
         android:id="@+id/btnNotifyMe"
         android:layout_width="match_parent"
@@ -18,4 +17,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.notificationapp.MyCustomView
+        android:id="@+id/dialView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnNotifyMe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

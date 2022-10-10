@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity() {
                     description = "this is description"
                 }
                 // Register the channel with the system
-                val notificationManager: NotificationManager =
-                    getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
                 notificationManager.createNotificationChannel(channel)
             }
 
@@ -50,6 +49,8 @@ class MainActivity : AppCompatActivity() {
                 notify(1, builder.build())
             }
         }
+
+
     }
 
 }

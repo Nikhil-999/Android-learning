@@ -1,3 +1,0 @@
-
-To use viewPager, must include its dependency into the grade file.
-

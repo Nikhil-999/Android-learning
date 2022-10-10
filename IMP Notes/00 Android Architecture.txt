@@ -3,9 +3,6 @@ Android arcitecture
 Layouts
 	-Constraint Layout (default layout like a container)
 
-use dp for setting margin , padding and length
-
-
 
 
 

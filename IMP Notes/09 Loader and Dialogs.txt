@@ -1,6 +1,0 @@
-Use Builder functionality to build a dialog box
-	AlertDialog.Builder(context:this).someMethods().someMethods().someMethods().show()
-	
-
-
-and for loader use progressbar XML tag.
